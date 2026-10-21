@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styled.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> services </title>
+    </head>
+<style>
+    h2{
+        text-align: left;
+        color: purple;
+        background-color: black;
+        border: 5px solid black;
+        border-radius: 16px;
+    }
+    h2:hover{
+        cursor: pointer;
+    }
+    .details{
+            display: none; 
+            margin: 10px 0;
+            padding: 10px;
+            background-color: white;
+            border: 1px solid black
+    }
+</style>
+    <header>
+        <h1> Services </h1>
+        <img src="logo.png" alt="logo" style=" position: absolute; top: 30px; left: 30px; max-height: 130px;">
+        <img src="logo.png" alt="logo" style=" position: absolute; top: 30px; right: 30px; max-height: 130px;">
+    </header>
+    <body>
+        
+        <h2 class="toggle"> <u>Loans </u></h2>
+        <p class="details"> We often get lots of people asking us about our high interest loans and whether they are the right call 
+            We are here to help you and should you be in some form of trouble such as legal trouble you are more than 
+            welcome to pop down to your local branch and ask one of our experts about our loans that we offer to anyone.  </p>
+        <br><br>
+        <h2 class="toggle"> <u>Savings</u></h2>
+        <p class="details"> It's very important to us that you keep all your money safe and secure that's why we offer 24hr
+            professional guidance on how we can help you save money and avoid any nasty instance of you needing to constantly
+            dip into your savings.
+        </p>
+        <br><br>
+        <h2 class="toggle"> <u>Accounts</u></h2>
+        <p class="details">Each account that is opened with us is specifically tailored towards you and your interests 
+            if you happen to be a  big spender for example we won't questiosn lots of money leaving your account but if you are saving up
+            for a house (for example) then we will keep a close eye on any money coming out of that savinsg account.
+        </p>
+        <br><br>
+        <h2 class="toggle"> <u>Offshore accounts</u></h2>
+        <p class="details"> To discover our exciting offshore opportunities you must be a client of over 10 years.</p>
+        <br><br>
+        <h2 class="toggle"> <u> Charity </u></h2>
+        <p class="details"> Should you wish to make a charitable donation to us as a show of good faith then feel speak to one of our colleagues
+            at your local branch.
+        </p>
+        <br><br>
+
+            
+        
+    </body>
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+
+
+    <script>
+        $(document).ready(function(){
+            $(".toggle").click(function(){
+                
+                $(this).next(".details").slideToggle(1000)
+
+            })
+
+        })
+    </script>
+
+    <footer>
+        <button onclick="document.location='Home.html'"> Home </button>
+        <button onclick="document.location='About.html'"> About </button>
+        <button onclick="document.location='FAQ.html'"> FAQs </button>
+        <button onclick="document.location='contacts.html'"> Contact Us </button>
+        <button onclick="document.location='Mortgage.html'"> Mortgage Calculator </button>
+
+    </footer>
+
+
+
+
+
+
+
+</html>

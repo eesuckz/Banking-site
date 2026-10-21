@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styled.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> FAQ's </title>
+
+
+        
+    </head>
+
+    <header>
+        <h1> FAQs </h1>
+        <img src="logo.png" alt="logo" style=" position: absolute; top: 30px; left: 30px; max-height: 130px;">
+        <img src="logo.png" alt="logo" style=" position: absolute; top: 30px; right: 30px; max-height: 130px;">
+    </header>
+    <body>
+        <button class="accordion">I want to switch to Your amazing bank but is it easy?</button>
+        <div class="panel">
+            <p>
+                Provided you give us all the necessary details switching over to us is as simple as your 1 times tables
+                we can do this in person or over the phone if you go to the contacts page one of our professionals will email you with details letting
+                us set up an appointment.
+            </p>
+        </div>
+        <button class="accordion">Will you help me save Money? </button>
+        <div class="panel">
+            <p>
+                If we didn't put the customer first we'd be spitting on the grave of all good standing citizens. 
+                It is our goal to help you get the most out of banking with us so you can rest assured that down the line a penny saved 
+                is many pennies earned.
+            </p>
+        </div>
+            <button class="accordion"> What's your security like? </button>
+        <div class="panel">
+            <p>
+                Here at Volcano Banking we deal with a lot of high profile customers who if we didn't protect their money 
+                we and a lot of other people would be in a whole lot of trouble so rest assured we have the best 
+                financial security out there.
+            </p>
+        </div>
+            <button class="accordion"> Do i earn interest? </button>
+        <div class="panel">
+            <p>
+                Wow what a great question. Of course we'd love it if all our customers were to earn interest on their money 
+                however that's just not possible with today's rich elite needing more money we take all the interest earned from your money and 
+                deposit it in their accounts so you know it'll be used carefully.
+            </p>
+        </div>
+            <button class="accordion"> Is your bank evil? </button>
+        <div class="panel">
+            <p>
+                Under the advice of our lawyers we have been advised to avoid this question for the forseable future
+            </p>
+        </div>
+        <button class="accordion"> is loyalty rewarded at this bank? </button>
+        <div class="panel">
+            <p>
+                Yes we are always for the customer and such we offer many money saving tips and tricks for customers of only 2 years.
+            </p>
+        </div>
+
+
+
+
+
+
+
+        <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+            
+            for (i = 0; i < acc.length; i++) {
+              acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                  panel.style.display = "none";
+                } else {
+                  panel.style.display = "block";
+                }
+              });
+            }
+            </script>
+
+
+    </body>
+
+    <footer>
+        <button onclick="document.location='Home.html'"> Home </button>
+        <button onclick="document.location='About.html'"> About </button>
+        <button onclick="document.location='Services.html'"> Services </button>
+        <button onclick="document.location='contacts.html'"> Contact Us </button>
+        <button onclick="document.location='Mortgage.html'"> Mortgage Calculator </button>
+    </footer>
+
+
+
+
+
+
+
+</html>
